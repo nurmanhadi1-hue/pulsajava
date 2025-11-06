@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PulsaJava • Isi Pulsa & Top Up</title>
+  <meta name="description" content="PulsaJava - Isi pulsa, token listrik, top up e-wallet, dan bayar tagihan. Cepat, aman, terpercaya.">
+  <style>
+    :root{
+      --yellow:#FFD43B;
+      --blue:#0b2545;
+      --muted:#f5f7fa;
+      --accent:#ffb03b;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--muted),#fff);color:var(--blue);}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:var(--yellow);display:flex;align-items:center;justify-content:center;color:var(--blue);font-weight:800;font-size:18px}
+    .brand h1{margin:0;font-size:20px}
+    nav a{margin-left:12px;text-decoration:none;color:var(--blue);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;padding:36px 0}
+    .hero .lead{font-size:28px;line-height:1.05;margin-bottom:12px}
+    .hero p{margin:0 0 18px 0;color:#274060}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--blue);color:white;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.outline{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+
+    .card{background:white;border-radius:12px;box-shadow:0 6px 18px rgba(11,37,69,0.06);padding:18px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .service{display:flex;flex-direction:column;align-items:center;padding:12px}
+    .services .icon{font-size:28px}
+    .prices{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .price{flex:1 1 140px;background:linear-gradient(180deg,#fff,var(--muted));padding:12px;border-radius:10px;text-align:center}
+
+    footer{padding:24px 0;text-align:center;color:#5d6e83}
+
+    /* responsive */
+    @media (max-width:880px){ .hero{grid-template-columns:1fr;} .services{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:420px){ .services{grid-template-columns:1fr} .logo{width:48px;height:48px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PJ</div>
+        <div>
+          <h1>PulsaJava</h1>
+          <div style="font-size:12px;color:#446079">Isi pulsa • Token • Top-up e-wallet</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Layanan</a>
+        <a href="#prices">Harga</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="lead">Semua Bisa Top Up di PulsaJava 💛</div>
+          <p>PulsaJava siap melayani isi pulsa semua operator, token listrik, top up Dana/Gopay/OVO, serta pembayaran tagihan. Cepat, aman, dan terpercaya.</p>
+          <div class="cta">
+            <a class="btn" href="https://wa.me/6285161064658" id="waPrimary" target="_blank">Chat via WhatsApp</a>
+            <a class="btn outline" href="#prices">Lihat Harga</a>
+          </div>
+
+          <div class="card" style="margin-top:18px">
+            <strong>Jam Operasional</strong>
+            <div style="margin-top:6px;color:#37526b">Setiap hari • 06:00 — 22:00</div>
+            <div style="margin-top:10px;font-size:13px;color:#5d6e83">Promo: Cashback khusus pelanggan tetap. Tanyakan di chat WA.</div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin:0 0 8px 0">Layanan Cepat</h3>
+            <div class="services" id="services">
+              <div class="service"><div class="icon">🔋</div><h4>Pulsa</h4></div>
+              <div class="service"><div class="icon">⚡</div><h4>Token PLN</h4></div>
+              <div class="service"><div class="icon">💳</div><h4>Top Up E-Wallet</h4></div>
+            </div>
+
+            <div style="margin-top:14px">
+              <h4 style="margin:0 0 8px 0">Harga Contoh</h4>
+              <div class="prices" id="prices">
+                <div class="price">Pulsa 5K<br><strong>Rp 6.000</strong></div>
+                <div class="price">Pulsa 10K<br><strong>Rp 11.000</strong></div>
+                <div class="price">Pulsa 25K<br><strong>Rp 26.000</strong></div>
+                <div class="price">Token 20K<br><strong>Rp 20.500</strong></div>
+                <div class="price">Top-up 50K<br><strong>Rp 50.500</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4 style="margin:0 0 8px 0">Kontak Cepat</h4>
+            <p style="margin:0 0 8px 0;color:#274060">Klik tombol WA untuk chat cepat.</p>
+            <a class="btn" href="https://wa.me/6285161064658" target="_blank">Chat PulsaJava</a>
+          </div>
+        </aside>
+      </section>
+
+      <section style="margin-top:18px">
+        <div class="card">
+          <h3>Tentang PulsaJava</h3>
+          <p style="color:#37526b">PulsaJava adalah layanan lokal untuk isi pulsa dan layanan digital. Kami mengutamakan kecepatan, kejujuran harga, dan pelayanan ramah. Simpan nomor ini untuk transaksi cepat dan promo harian.</p>
+        </div>
+      </section>
+
+      <section style="margin-top:18px" id="contact">
+        <div class="card">
+          <h3>Hubungi Kami</h3>
+          <p style="color:#37526b;margin:0 0 8px 0">WhatsApp: <strong>+6285161064658</strong></p>
+          <p style="margin:0 0 8px 0;color:#5d6e83">Email: <strong>nurmanhadi1@gmail.com</strong></p>
+          <p style="margin-top:8px;color:#274060">Catatan: Situs ini dibuat siap deploy ke GitHub Pages. Ganti nomor WA di tautan jika ingin pakai nomor lain.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2025 PulsaJava • Cepat • Aman • Terpercaya
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});});});
+  </script>
+</body>
+</html>
